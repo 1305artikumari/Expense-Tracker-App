@@ -5,10 +5,14 @@ const secretKey = process.env.SECRET_KEY;
 exports.authorization = async(request,response,next)=>{
     try {
         const token = request.headers.authorization;
-        const decode = jwt.verify(token,secretKey);
+        // console.log(token);
+        const decode = jwt.verify(token, secretKey);
+       
         const user = await User.findByPk(decode.userId);
         request.user = user;
+        // console.log(user);
         next();
+        
         
     } catch (error) {
         if (error.name === 'TokenExpiredError') {

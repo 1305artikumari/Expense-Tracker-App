@@ -19,7 +19,7 @@ const elements = {
     prevpagebtn: document.querySelector('#prevPage'),
     noiteminpage: document.querySelector('#noiteminpage'),
 };
-debugger
+
 elements.submitbtn.addEventListener('click', addExpense);
 elements.expensePlaceholder.addEventListener('click', (e) => {
     if (e.target && e.target.classList.contains("delbtn")) deleteExpense(e);
@@ -39,7 +39,7 @@ let hasMoreExpenses;
 let hasPreviousExpenses;
 let noitem = 5;
 
-setupProfile();
+// setupProfile();
 refresh();
 function showOutput(response) {
     elements.expensePlaceholder.innerHTML = "";
@@ -100,7 +100,8 @@ function createauthaxios() {
         });
     }
     else {
-        window.location.href = "/home";
+        // window.location.href = "/home";
+        console.log(tokenData);
     }
 }
 function logout(e) {
@@ -237,11 +238,13 @@ async function refresh() {
         if (error.response && error.response.status === 401) {
             console.log(error);
             alert(error.response.data.message);
-            window.location.href = "home";
+            // window.location.href = "home";
+            
         } else {
             console.log(error);
             alert("Something went wrong please log in again");
-            window.location.href = "home";
+            // window.location.href = "home";
+
         }
     }
 }

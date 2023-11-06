@@ -47,13 +47,21 @@ exports.signinAuthentication = async (request, response, next) => {
             }
         }
 
-
+    
     } catch (error) {
         console.log(error);
         response.status(500).send('An error occurred during authentication');
     }
 }
 exports.getcurrentuser = async (request, response, next) => {
-    const user = request.user;
-    response.json({ user });
+   try {
+       const user = request.user;
+       console.log(user);
+       response.json({ user });
+    //    console.log(user);
+   } catch (error) {
+       console.log(error);
+   }
+    // const user = request.user;
+    // response.json({ user });
 }
