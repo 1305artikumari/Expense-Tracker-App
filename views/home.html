@@ -11,9 +11,9 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body class="text-bg-success bg-opacity-25">
+<body class="text-bg-info bg-opacity-25">
   <!-- Nav bar -->
-  <nav class="nav navbar navbar-expand-lg text-bg-success col-12">
+  <nav class="nav navbar navbar-expand-lg text-bg-info bg-opacity-25 col-12">
     <div class="container text-black p-3 ">
       <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="brand-image" class=" img-fluid rounded-circle"
           width="50px" height="50px"></a>
@@ -67,11 +67,11 @@
   <div class="modal fade" id="signup-form">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content ">
-        <div class="modal-header text-bg-success bg-opacity-50 text-black">
+        <div class="modal-header text-bg-info bg-opacity-50 text-black">
           <h2>Sign up here</h2>
           <button class="btn btn-close" data-bs-dismiss="modal" data-bs-target="#signup-form"></button>
         </div>
-        <div class="modal-body text-bg-success bg-opacity-25 text-black">
+        <div class="modal-body text-bg-info bg-opacity-25 text-black">
           <form action="" method="" id="myForm1">
             <div class="form-group mt-3">
               <label for="Name"><i class="fas fa-user-astronaut "></i>Name</label>
@@ -92,7 +92,7 @@
                 required>
             </div>
             <div class="form-group text-center mt-4 ">
-              <input type="submit" class="btn btn-success submit" value="Sign Up" id="signup">
+              <input type="submit" class="btn btn-info submit" value="Sign Up" id="signup">
             </div>
             <div class="form-group text-center mt-2">
               Already member? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signin-form">Signin here</a>
@@ -106,7 +106,7 @@
               <strong>Holy guacamole!</strong> both password should be same.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="alert bg-success alert-dismissible fade show mt-3 d-none" role="alert" id="successDiv1">
+            <div class="alert bg-info alert-dismissible fade show mt-3 d-none" role="alert" id="successDiv1">
               <strong>Holy guacamole!</strong> Sign up successfull redirecting to profile.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
@@ -119,11 +119,11 @@
   <div class="modal fade " id="signin-form">
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content">
-        <div class="modal-header text-bg-success bg-opacity-50 text-black">
+        <div class="modal-header text-bg-info bg-opacity-50 text-black">
           <h2 id="formhead">Sign in here</h2>
           <button class="btn btn-close" data-bs-dismiss="modal" data-bs-target="#signin-form"></button>
         </div>
-        <div class="modal-body text-bg-success bg-opacity-25 text-black">
+        <div class="modal-body text-bg-info bg-opacity-25 text-black">
           <!--Sigin form-->
           <form action="" method="" id="myForm2">
             <div class="form-group mt-3">
@@ -136,7 +136,7 @@
                 required>
             </div>
             <div class="form-group text-center mt-4">
-              <input type="submit" class="btn btn-success submit" value="Sign in" id="signin">
+              <input type="submit" class="btn btn-info submit" value="Sign in" id="signin">
             </div>
             <div class="form-group text-center mt-2">
               <a href="#" id="forgot-password-button" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot password?</a>
@@ -152,7 +152,7 @@
               <strong>Holy guacamole!</strong> password incorrect try again.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="alert bg-success alert-dismissible fade show mt-3 d-none " role="alert" id="successDiv2">
+            <div class="alert bg-info alert-dismissible fade show mt-3 d-none " role="alert" id="successDiv2">
               <strong>Holy guacamole!</strong> Successfully logged in.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
@@ -207,6 +207,7 @@
               </div>
               <div class="d-grid gap-2">
                 <button type="button" class="btn btn-warning" id="rzp-button1">Proceed to payment</button>
+                <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
                 <button type="button" class="btn btn-outline-danger ms-5 me-5" data-bs-toggle="modal"
                   data-bs-target="#premium-form" id="cancelbtn">Cancel</button>
               </div>
@@ -233,13 +234,13 @@
               <input type="text" class="form-control" id="forgotEmail" name="userName" placeholder="Email" required>
             </div>
             <div class="form-group text-center mt-4">
-              <input type="submit" class="btn btn-success submit" value="Submit" id="paswdresetbtn">
+              <input type="submit" class="btn btn-info submit" value="Submit" id="paswdresetbtn">
             </div>
             <div class="alert bg-warning alert-dismissible fade show mt-3 d-none" role="alert" id="usernameDiv4">
               <strong>Holy guacamole!</strong> user is not exist enter correct credentials.
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <div class="alert bg-success alert-dismissible fade show mt-3 d-none" role="alert" id="successDiv4">
+            <div class="alert bg-info alert-dismissible fade show mt-3 d-none" role="alert" id="successDiv4">
               <strong>Holy guacamole!</strong> Check mail for resetting password.
               <span class="text-warning">link is valid for 5 min</span>
               <button type="button" href="/home" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -263,7 +264,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-<!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="/js/home.js"></script>
 
 </html>
